@@ -3,7 +3,6 @@ import daton from "../images/Daton.png";
 import cocreate from "../images/teamcocreate.png";
 import ltb from "../images/lightblb.png";
 import majestic from "../images/mjestic.png";
-import osam from "../images/Osam.png";
 import qplis from "../images/Quezon.png";
 import lappee from "../images/lappeev1-land.png";
 import apex from "../images/apex.png";
@@ -49,15 +48,6 @@ export const Sample_Projects: projects[] = [
         tech: ["WordPress", "SEO", "Elementor"],
         link: "https://majesticprintpackaging.com/",
         images: [majestic],
-    },
-    {
-        id: "wp-05",
-        name: "One Simple Act Movement",
-        description:
-            "Community-driven non-profit site designed for social advocacy and events.",
-        tech: ["WordPress", "PHP", "Elementor"],
-        link: "https://onesimpleactmovement.com/",
-        images: [osam],
     },
 
     // SHOPIFY
