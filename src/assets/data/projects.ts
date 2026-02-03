@@ -3,7 +3,7 @@ import daton from "../images/Daton.png";
 import cocreate from "../images/teamcocreate.png";
 import ltb from "../images/lightblb.png";
 import majestic from "../images/mjestic.png";
-import osam from "../images/osam.png";
+import osam from "../images/Osam.png";
 import qplis from "../images/QUEZON.png";
 import lappee from "../images/lappeev1-land.png";
 import apex from "../images/apex.png";
