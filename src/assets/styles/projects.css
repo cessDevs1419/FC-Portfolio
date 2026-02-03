@@ -14,3 +14,15 @@
     padding: 5px 10px;
     box-shadow: 2px 2px 2px 1px rgb(0 0 0 / 20%);
 }
+.title-card {
+    min-height: 80px;
+}
+.page-scroll {
+    height: 300px;
+    overflow: scroll;
+    box-shadow: 2px 2px 2px 1px rgb(0 0 0 / 20%);
+}
+
+.page-scroll img {
+    width: 100%;
+}

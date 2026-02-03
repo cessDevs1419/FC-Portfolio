@@ -1,4 +1,16 @@
 import { type projects } from "../../app/model/projects";
+import daton from "../images/Daton.png";
+import cocreate from "../images/teamcocreate.png";
+import ltb from "../images/lightblb.png";
+import majestic from "../images/mjestic.png";
+import osam from "../images/osam.png";
+import qplis from "../images/QUEZON.png";
+import lappee from "../images/lappeev1-land.png";
+import apex from "../images/apex.png";
+import cryo from "../images/cryo.png";
+import riot from "../images/riot.png";
+import swyper from "../images/sweeper.png";
+import brnd from "../images/brnddeals.png";
 
 export const Sample_Projects: projects[] = [
     // WORDPRESS
@@ -7,40 +19,45 @@ export const Sample_Projects: projects[] = [
         name: "Daton Haywood",
         description:
             "A professional consultancy and personal branding site built on WordPress.",
-        tech: ["WordPress", "PHP", "Elementor", "SEO"],
+        tech: ["WordPress", "PHP", "Elementor"],
         link: "https://datonhaywood.com/",
+        images: [daton],
     },
     {
         id: "wp-02",
         name: "Team Co-Create",
         description:
             "Business collaboration platform focusing on agency workflow and services.",
-        tech: ["WordPress", "Custom CSS", "Responsive Design"],
+        tech: ["WordPress", "PHP", "Elementor"],
         link: "https://teamcocreate.com/",
+        images: [cocreate],
     },
     {
         id: "wp-03",
         name: "Lightbulb PH",
         description:
             "A digital solutions agency site optimized for high performance and lead generation.",
-        tech: ["WordPress", "Performance Optimization", "MySQL"],
+        tech: ["WordPress", "PHP", "Elementor"],
         link: "https://lightbulb.ph/",
+        images: [ltb],
     },
     {
         id: "wp-04",
         name: "Majestic Print Packaging",
         description:
             "Industrial e-commerce catalog for premium printing and packaging products.",
-        tech: ["WordPress", "WooCommerce", "Inventory Display"],
+        tech: ["WordPress", "SEO", "Elementor"],
         link: "https://majesticprintpackaging.com/",
+        images: [majestic],
     },
     {
         id: "wp-05",
         name: "One Simple Act Movement",
         description:
             "Community-driven non-profit site designed for social advocacy and events.",
-        tech: ["WordPress", "Donation Systems", "Community Portal"],
+        tech: ["WordPress", "PHP", "Elementor"],
         link: "https://onesimpleactmovement.com/",
+        images: [osam],
     },
 
     // SHOPIFY
@@ -49,18 +66,20 @@ export const Sample_Projects: projects[] = [
         name: "Brand Deals (BRND)",
         description:
             "Modern Shopify storefront for premium brand liquidation and retail deals.",
-        tech: ["Shopify", "Liquid", "E-commerce", "UX/UI"],
+        tech: ["Shopify", "Liquid"],
         link: "https://www.brnddeals.com/",
+        images: [brnd],
     },
 
     // VUE & GOVERNMENT
     {
         id: "vue-01",
-        name: "Sangguniang Panlalawigan ng Quezon",
+        name: "Quezon Legislative",
         description:
             "Official legislative portal for Quezon Province, featuring public records and transparency tools.",
-        tech: ["Vue.js", "JavaScript", "API Integration", "Public Sector"],
+        tech: ["Vue.js", "JavaScript", "API"],
         link: "https://sp.quezon.gov.ph/",
+        images: [qplis],
     },
 
     // REACT / ANGULAR
@@ -69,8 +88,9 @@ export const Sample_Projects: projects[] = [
         name: "Lappee - Admin Ecosystem",
         description:
             "Comprehensive enterprise dashboard for the Lappee platform, built with React and Angular modules.",
-        tech: ["React", "Angular", "TypeScript", "State Management"],
-        link: "/",
+        tech: ["Angular", "TypeScript", "API"],
+        link: "",
+        images: [lappee],
     },
 
     // VANILLA DEVELOPMENT / PREVIOUS PORTFOLIO
@@ -79,31 +99,35 @@ export const Sample_Projects: projects[] = [
         name: "Apex Lounge",
         description:
             "A service platform built with Laravel Blade to help players improve gaming performance.",
-        tech: ["JavaScript", "Vanilla CSS", "Laravel blade"],
-        link: "/",
+        tech: ["JavaScript", "CSS", "Blade"],
+        link: "",
+        images: [apex],
     },
     {
         id: "van-02",
         name: "Cryo Games",
         description:
             "Landing website for sellers to display products via Sellix API integration.",
-        tech: ["JavaScript", "Vanilla CSS", "HTML", "Sellix API"],
-        link: "/",
+        tech: ["Vanilla Development", "Sellix API"],
+        link: "",
+        images: [cryo],
     },
     {
         id: "van-03",
         name: "RIOT",
         description:
             "Product showcase platform connecting to external e-commerce APIs.",
-        tech: ["JavaScript", "Vanilla CSS", "HTML", "Sellix API"],
-        link: "/",
+        tech: ["Vanilla Development", "Sellix API"],
+        link: "",
+        images: [riot],
     },
     {
         id: "van-04",
         name: "Swypers Paradise",
         description:
             "Online platform designed for displaying and selling gaming accounts.",
-        tech: ["JavaScript", "Vanilla CSS", "HTML", "Sellix API"],
-        link: "/",
+        tech: ["Vanilla Development", "Sellix API"],
+        link: "",
+        images: [swyper],
     },
 ];

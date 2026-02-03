@@ -6,6 +6,7 @@
     --color-light: #f3f3f3;
     --color-dark: #333333;
     --color-primary: #0962f0;
+    --color-secondary: rgba(43, 56, 100, 0.9);
     --padding: 40px;
 }
 
@@ -41,6 +42,29 @@ body {
     font-size: 20px;
     line-height: 28px;
     font-weight: 500;
+}
+
+.navbar .navlink:hover {
+    color: var(--color-primary) !important;
+}
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+.navbar {
+    z-index: 99;
+    transition:
+        background-color 0.2s ease,
+        box-shadow 0.2s ease;
+}
+.navbar-scrolled .navlink {
+    color: var(--color-light) !important;
+}
+.navbar-scrolled {
+    background-color: var(--color-secondary);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+}
+.navbar-scrolled .navlink:hover {
+    color: var(--color-primary) !important;
 }
 
 button {

@@ -1,6 +1,7 @@
 import "./App.css";
 import Home from "./app/pages/Home";
 import Navbar from "./app/components/navigation";
+import Footer from "./app/components/footer";
 import { useEffect } from "react";
 import AOS from "aos";
 
@@ -17,6 +18,7 @@ function App() {
         <>
             <Navbar></Navbar>
             <Home></Home>
+            <Footer></Footer>
         </>
     );
 }
