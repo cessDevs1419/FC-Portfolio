@@ -64,14 +64,29 @@ const Home = () => {
                 parent_className="about bg-primary"
                 child_className="d-flex flex-column align-items-start justify-content-center "
             >
-                <div className="m-auto mb-5 pb-5 w-100 text-center border border-bottom-1 border-start-0 border-end-0 border-top-0 row">
-                    <div className="col-4 border border-bottom-0 border-start-0 border-end-1 border-top-0 px-5 py-3"></div>
-                    <div className="col-4 px-5 py-3"></div>
-                    <div className="col-4 border border-bottom-0 border-start-1 border-end-0 border-top-0 px-5 py-3"></div>
+                <div className="m-auto mb-5 w-100 text-center border border-bottom-1 border-start-0 border-end-0 border-top-0 row">
+                    <div className="col-4 d-flex justify-content-center align-items-center gap-3 border border-bottom-0 border-start-0 border-end-1 border-top-0 px-5 py-3">
+                        <h3 className="font-sub text-white m-0 p-0">2+</h3>
+                        <p className=" font-paragraph text-white m-0 p-0">
+                            Years of Experience
+                        </p>
+                    </div>
+                    <div className="col-4 px-5 py-3 d-flex justify-content-center align-items-center gap-3 ">
+                        <h3 className="font-sub text-white m-0 p-0">15+</h3>
+                        <p className=" font-paragraph text-white m-0 p-0">
+                            Projects Done
+                        </p>
+                    </div>
+                    <div className="col-4 d-flex justify-content-center align-items-center gap-3 border border-bottom-0 border-start-1 border-end-0 border-top-0 px-5 py-3">
+                        <h3 className="font-sub text-white m-0 p-0">4.5</h3>
+                        <p className=" font-paragraph text-white m-0 p-0">
+                            Client Satistaction
+                        </p>
+                    </div>
                 </div>
                 <div className="m-auto ">
                     <h3 className="font-paragraph text-white m-0">
-                        Front End Specialist | Wordpress Developer | Project
+                        Front End Engineer | Wordpress Developer | Project
                         Manager
                     </h3>
                 </div>
