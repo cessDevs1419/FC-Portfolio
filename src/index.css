@@ -92,6 +92,13 @@ button {
         line-height: 200px;
     }
 }
+@media (max-width: 1200px) {
+    .navbar {
+        background-color: var(--color-secondary);
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    }
+}
+
 @media (max-width: 1024px) {
     .font-header {
         font-size: 48px;
