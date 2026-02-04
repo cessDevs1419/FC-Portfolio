@@ -4,6 +4,7 @@ import ProjectCard from "../components/project_card";
 import { Sample_Projects } from "../../assets/data/projects";
 import "../../assets/styles/home.css";
 import "../../assets/styles/projects.css";
+import Counter from "../components/counter";
 
 const Home = () => {
     return (
@@ -15,11 +16,11 @@ const Home = () => {
                 child_className="d-flex flex-column align-items-center justify-content-center"
             >
                 <div className="title-container text-center">
-                    <h1 className="font-header">
+                    <h1 className="font-header" data-aos="fade-up">
                         Front-end developer <br></br>building fast, reliable
                         websites.
                     </h1>
-                    <h5 className="font-paragraph">
+                    <h5 className="font-paragraph" data-aos="fade-up">
                         I specialize in modern front-end development and custom
                         WordPress <br></br>builds that are responsive, scalable,
                         and easy to maintain.
@@ -29,7 +30,10 @@ const Home = () => {
                         production-ready websites.
                     </h5>
                 </div>
-                <div className="button-container d-flex justify-content-between align-items-center gap-5">
+                <div
+                    className="button-container d-flex justify-content-between align-items-center gap-5"
+                    data-aos="fade-up"
+                >
                     <Button className="view font-paragraph" scrollTo="projects">
                         View Work
                     </Button>
@@ -47,7 +51,10 @@ const Home = () => {
                 parent_className="projects"
                 child_className="d-flex flex-column align-items-start justify-content-center"
             >
-                <div className="m-auto mb-5 pb-5 w-100 text-center border border-bottom-1 border-start-0 border-end-0 border-top-0">
+                <div
+                    className="m-auto mb-5 pb-5 w-100 text-center border border-bottom-1 border-start-0 border-end-0 border-top-0"
+                    data-aos="fade-up"
+                >
                     <h3 className="font-sub">FEATURED PROJECTS</h3>
                 </div>
                 <div className="projects-container row ">
@@ -66,13 +73,13 @@ const Home = () => {
             >
                 <div className="m-auto mb-5 w-100 text-center border border-bottom-1 border-start-0 border-end-0 border-top-0 row">
                     <div className="rate col-md-4 col-12 d-flex justify-content-center align-items-center gap-3 border border-bottom-0 border-start-0 border-end-1 border-top-0 px-5 py-3">
-                        <h3 className="font-sub text-white m-0 p-0">2+</h3>
+                        <Counter end={2} suffix="+" />
                         <p className=" font-paragraph text-white m-0 p-0">
                             Years of Experience
                         </p>
                     </div>
                     <div className="rate col-md-4 col-12 px-5 py-3 d-flex justify-content-center align-items-center gap-3 ">
-                        <h3 className="font-sub text-white m-0 p-0">15+</h3>
+                        <Counter end={15} suffix="+" />
                         <p className=" font-paragraph text-white m-0 p-0">
                             Projects Done
                         </p>
@@ -97,10 +104,16 @@ const Home = () => {
                 child_className="d-flex align-items-start justify-content-center row"
             >
                 <div className="col-lg-6 col-12 mb-lg-0 mb-3">
-                    <h2 className="font-about text-dark text-lg-end text-center m-0 mb-5">
+                    <h2
+                        className="font-about text-dark text-lg-end text-center m-0 mb-5"
+                        data-aos="fade-right"
+                    >
                         About
                     </h2>
-                    <p className="font-paragraph text-dark text-lg-end text-center   m-0">
+                    <p
+                        className="font-paragraph text-dark text-lg-end text-center   m-0"
+                        data-aos="fade-up"
+                    >
                         I’m a front-end developer focused on building
                         responsive, maintainable websites and custom WordPress
                         solutions. I work with modern front-end tools to turn
@@ -108,17 +121,32 @@ const Home = () => {
                     </p>
                 </div>
                 <div className="col-lg-6 col-12 mb-md-0 mb-3">
-                    <h1 className="font-tech text-dark text-lg-start text-center m-0 mb-5">
+                    <h1
+                        className="font-tech text-dark text-lg-start text-center m-0 mb-5"
+                        data-aos="fade-left"
+                    >
                         Tech
                     </h1>
                     <div className="d-flex justify-content-center justify-content-lg-start gap-3 m-aut m-lg-0 ">
-                        <span className="tech-badge font-paragraph rounded-3 border">
+                        <span
+                            className="tech-badge font-paragraph rounded-3 border"
+                            data-aos="fade-up"
+                            data-aos-duration="500"
+                        >
                             React
                         </span>
-                        <span className="tech-badge font-paragraph rounded-3 border">
+                        <span
+                            className="tech-badge font-paragraph rounded-3 border"
+                            data-aos="fade-up"
+                            data-aos-duration="1000"
+                        >
                             Wordpress
                         </span>
-                        <span className="tech-badge font-paragraph rounded-3 border">
+                        <span
+                            className="tech-badge font-paragraph rounded-3 border"
+                            data-aos="fade-up"
+                            data-aos-duration="1500"
+                        >
                             API Integration
                         </span>
                     </div>
