@@ -100,8 +100,8 @@ const Home = () => {
             </Container>
             <Container
                 container_id="about2"
-                parent_className="about2"
-                child_className="d-flex align-items-start justify-content-center row overflow-hidden"
+                parent_className="about2 overflow-hidden"
+                child_className="d-flex align-items-start justify-content-center row "
             >
                 <div className="col-lg-6 col-12 mb-lg-0 mb-3">
                     <h2
