@@ -13,7 +13,7 @@ const Home = () => {
             <Container
                 container_id="hero"
                 parent_className="hero"
-                child_className="d-flex flex-column align-items-center justify-content-center"
+                child_className="d-flex flex-column align-items-center justify-content-center pt-3 pt-sm-0"
             >
                 <div className="title-container text-center">
                     <h1 className="font-header" data-aos="fade-up">
@@ -101,7 +101,7 @@ const Home = () => {
             <Container
                 container_id="about2"
                 parent_className="about2"
-                child_className="d-flex align-items-start justify-content-center row"
+                child_className="d-flex align-items-start justify-content-center row overflow-hidden"
             >
                 <div className="col-lg-6 col-12 mb-lg-0 mb-3">
                     <h2
