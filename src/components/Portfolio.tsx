@@ -1,11 +1,14 @@
 import React, { useState, useMemo } from "react";
 import { PROJECT_CATEGORIES, PROJECTS_DATA } from "../data/portfolioData";
-import type { ProjectCategory } from "../types/portfolio";
+import type { Project, ProjectCategory } from "../types/portfolio";
 import ProjectCard from "./ProjectCard";
+import ConfidentialProjectModal from "./ConfidentialProjectModal";
 
 export const Portfolio: React.FC = () => {
     const [activeCategory, setActiveCategory] =
         useState<ProjectCategory>("All");
+    const [selectedConfidentialProject, setSelectedConfidentialProject] =
+        useState<Project | null>(null);
 
     // Dynamic filtering using useMemo for optimal performance
     const filteredProjects = useMemo(() => {
@@ -77,7 +80,11 @@ export const Portfolio: React.FC = () => {
                             key={project.id}
                             className="col-lg-4 col-md-6 col-12"
                         >
-                            <ProjectCard project={project} index={index} />
+                            <ProjectCard
+                                project={project}
+                                index={index}
+                                onSelectConfidential={setSelectedConfidentialProject}
+                            />
                         </div>
                     ))}
                 </div>
@@ -91,6 +98,11 @@ export const Portfolio: React.FC = () => {
                     </div>
                 )}
             </div>
+
+            <ConfidentialProjectModal
+                project={selectedConfidentialProject}
+                onClose={() => setSelectedConfidentialProject(null)}
+            />
         </section>
     );
 };

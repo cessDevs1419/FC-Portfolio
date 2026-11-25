@@ -9,11 +9,7 @@ import type {
 } from "../types/portfolio";
 
 // Card-optimized WebP images
-import yamakouImg from "../assets/images/cards/yamakou.webp";
-import yuanImg from "../assets/images/cards/yuan.webp";
-import ishikariImg from "../assets/images/cards/ishikari.webp";
-import hayashiImg from "../assets/images/cards/hayashi.webp";
-import reprojectImg from "../assets/images/cards/reproject.webp";
+import confidentialFcImg from "../assets/images/cards/confidential-fc.webp";
 import cocreateImg from "../assets/images/cards/cocreate.webp";
 import lightbulbImg from "../assets/images/cards/lightbulb.webp";
 import phixelsImg from "../assets/images/cards/phixels.webp";
@@ -201,70 +197,105 @@ export const PROJECTS_DATA: Project[] = [
         title: "Yamakou Sapporo (山鋼札幌)",
         category: "Custom WordPress",
         description:
-            "100% custom PHP WordPress architecture for a premier Japanese industrial steel & construction tooling firm, featuring clean Japanese typography and sub-2.5s load times.",
-        techStack: ["WordPress", "Custom PHP", "Japanese Typography", "SCSS", "Speed Tuning"],
-        image: yamakouImg,
+            "Custom-built from scratch via AI-assisted engineering, Figma MCP design matching, and custom .agent rules & skills for a Japanese steel & tooling firm with sub-2.5s load times.",
+        longDescription:
+            "Engineered a 100% custom WordPress theme completely from scratch using AI-assisted engineering workflows, direct Figma MCP layout parity, and custom .agent rules and skills files to enforce strict Japanese coding and QA standards.",
+        architectureHighlights: [
+            "Custom-built from scratch with AI-assisted engineering guided by .agent rules & skills files",
+            "Pixel-accurate layout, spacing, and Japanese typography matched directly via Figma MCP",
+            "Custom PHP template hierarchy with modular ACF blocks achieving sub-2.5s initial load times",
+        ],
+        techStack: ["WordPress", "Custom PHP", "Figma MCP", ".agent Rules & Skills", "AI-Assisted Build"],
+        image: confidentialFcImg,
         imageWidth: 800,
         imageHeight: 432,
-        liveUrl: "https://yamakou-inc.co.jp/",
+        confidentialLabel: "Project under Company Confidential",
         featured: true,
-        metrics: "Sub-2.5s load time · 100% Custom PHP",
+        metrics: "Sub-2.5s load time · Figma MCP + .agent",
     },
     {
         id: "proj-yuan",
         title: "Yuan Healthcare & Living (ゆあん)",
         category: "Custom WordPress",
         description:
-            "Warm, highly accessible corporate web portal designed for a Japanese nursing and senior living provider, built with zero heavy visual page builders.",
-        techStack: ["WordPress", "Custom PHP", "Mobile Optimization", "Accessibility (a11y)"],
-        image: yuanImg,
+            "Accessible Japanese nursing & senior living portal custom-built from scratch with AI-assisted workflows, Figma MCP parity, and .agent quality/a11y rulesets.",
+        longDescription:
+            "Developed an accessibility-first custom WordPress theme from scratch for a Japanese nursing and senior living provider, combining AI-assisted engineering with Figma MCP design inspection and .agent rules & skills for consistent responsive QA.",
+        architectureHighlights: [
+            "Built from scratch using AI-assisted engineering with .agent rules enforcing WCAG contrast & semantic HTML5",
+            "Exact Figma-to-code component spacing and typography synchronized via Figma MCP",
+            "Bespoke PHP page templates audited across Japanese iOS and Android viewports",
+        ],
+        techStack: ["WordPress", "Custom PHP", "Figma MCP", ".agent Rules & Skills", "Accessibility (a11y)"],
+        image: confidentialFcImg,
         imageWidth: 800,
         imageHeight: 432,
-        liveUrl: "https://yuan.co.jp/",
+        confidentialLabel: "Project under Company Confidential",
         featured: true,
-        metrics: "Strict Japanese QA · Mobile-First UI",
+        metrics: "Strict Japanese QA · Figma MCP + .agent",
     },
     {
         id: "proj-ishikari",
         title: "Ishikari Glass Center (石狩ガラス)",
         category: "Custom WordPress",
         description:
-            "Corporate digital presence for precision architectural glass engineering in Hokkaido. Built with modular template blocks, clean semantic HTML, and high Core Web Vitals scores.",
-        techStack: ["WordPress", "PHP", "Core Web Vitals", "Figma-to-Code"],
-        image: ishikariImg,
+            "Precision architectural glass corporate site custom-built from scratch using AI-assisted engineering, Figma MCP specs, and modular .agent skills for 95+ Core Web Vitals.",
+        longDescription:
+            "Built a lightweight custom PHP WordPress architecture from scratch for an architectural glass enterprise in Hokkaido. Leveraged Figma MCP tokens and custom .agent rules & skills files to streamline modular block generation and hit 95+ Core Web Vitals.",
+        architectureHighlights: [
+            "Custom WordPress blocks built from scratch with AI-assisted workflows and modular .agent skills",
+            "Strict Figma MCP visual parity for grid proportions, CSS spacing, and responsive breakpoints",
+            "Core Web Vitals tuning targeting minimal CLS, lean JS payloads, and fast LCP",
+        ],
+        techStack: ["WordPress", "Custom PHP", "Figma MCP", ".agent Rules & Skills", "Core Web Vitals"],
+        image: confidentialFcImg,
         imageWidth: 800,
-        imageHeight: 431,
-        liveUrl: "https://ishikari-glass.com/",
+        imageHeight: 432,
+        confidentialLabel: "Project under Company Confidential",
         featured: true,
-        metrics: "Core Web Vitals 95+ · Clean PHP Architecture",
+        metrics: "Core Web Vitals 95+ · AI-Assisted Build",
     },
     {
         id: "proj-hayashi",
         title: "Hayashi Clinic (形成外科 はやしクリニック)",
         category: "Custom WordPress",
         description:
-            "Modern clinical website featuring direct web reservation routing, clinic hours scheduling, structured medical schema markup, and rapid mobile page speed.",
-        techStack: ["WordPress", "Custom PHP", "Medical SEO Schema", "Reservation Routing"],
-        image: hayashiImg,
+            "Clinical WordPress portal custom-built from scratch with direct web reservation routing, medical SEO schema, Figma MCP design matching, and .agent QA rules.",
+        longDescription:
+            "Engineered a trust-focused medical clinic website completely from scratch with AI-assisted development, Figma MCP layout synchronization, and .agent rulesets governing semantic markup, medical schema structure, and mobile speed.",
+        architectureHighlights: [
+            "Built from scratch with AI-assisted engineering and .agent rules enforcing clean PHP & SEO schema",
+            "UI components and mobile reservation flows matched directly from Figma via Figma MCP",
+            "Direct patient web-reservation routing audited across Safari iOS and Chromium mobile devices",
+        ],
+        techStack: ["WordPress", "Custom PHP", "Figma MCP", "Medical SEO Schema", "AI-Assisted Build"],
+        image: confidentialFcImg,
         imageWidth: 800,
-        imageHeight: 435,
-        liveUrl: "https://ps-hayashiclinic.jp/",
+        imageHeight: 432,
+        confidentialLabel: "Project under Company Confidential",
         featured: true,
-        metrics: "Web Booking Integration · SEO Optimized",
+        metrics: "Web Booking Integration · Figma MCP",
     },
     {
         id: "proj-reproject",
         title: "Re Project (アールプロジェクト)",
         category: "Custom WordPress",
         description:
-            "Clean, modern corporate website for a Hokkaido-based lifestyle, electrical, and utilities infrastructure enterprise, engineered with pure custom PHP and strict Japanese standards.",
-        techStack: ["WordPress", "Custom PHP", "Japanese Localization", "Responsive UI"],
-        image: reprojectImg,
+            "Hokkaido utilities & infrastructure portal custom-built from scratch via AI-assisted engineering, Figma MCP precision, and .agent rules & skills for strict Japanese QA.",
+        longDescription:
+            "Delivered a modern corporate and recruitment portal for a Hokkaido utilities and electrical services enterprise—engineered from scratch with pure custom PHP, Figma MCP design alignment, and custom .agent rules & skills for repeatable Japanese localization QA.",
+        architectureHighlights: [
+            "Pure custom PHP theme built from scratch using AI-assisted engineering and .agent workflow skills",
+            "Pixel-level Japanese layout & recruitment UI parity verified through Figma MCP",
+            "Lightweight front-end delivery with clean animation timing and accessible inquiry forms",
+        ],
+        techStack: ["WordPress", "Custom PHP", "Figma MCP", ".agent Rules & Skills", "Japanese Localization"],
+        image: confidentialFcImg,
         imageWidth: 800,
         imageHeight: 432,
-        liveUrl: "http://re-project-inc.com/",
+        confidentialLabel: "Project under Company Confidential",
         featured: true,
-        metrics: "Strict Japanese Standards · Clean Architecture",
+        metrics: "Strict Japanese Standards · .agent Workflow",
     },
     {
         id: "proj-daton",

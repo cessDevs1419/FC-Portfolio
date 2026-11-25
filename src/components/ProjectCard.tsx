@@ -4,11 +4,17 @@ import type { Project } from "../types/portfolio";
 interface ProjectCardProps {
     project: Project;
     index?: number;
+    onSelectConfidential?: (project: Project) => void;
 }
 
-export const ProjectCard: React.FC<ProjectCardProps> = ({ project, index = 0 }) => {
+export const ProjectCard: React.FC<ProjectCardProps> = ({
+    project,
+    index = 0,
+    onSelectConfidential,
+}) => {
     // Determine whether to use eager loading for top 2 items, lazy for below the fold
     const isBelowTheFold = index >= 2;
+    const isConfidential = !project.liveUrl && Boolean(project.confidentialLabel);
 
     return (
         <article
@@ -74,6 +80,30 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({ project, index = 0 }) 
                             </svg>
                         </a>
                     )}
+                    {isConfidential && (
+                        <button
+                            type="button"
+                            onClick={() => onSelectConfidential?.(project)}
+                            className="fc-project-overlay-btn fc-project-overlay-btn-confidential"
+                            aria-label={`View confidential project brief for ${project.title}`}
+                        >
+                            <svg
+                                viewBox="0 0 24 24"
+                                width="16"
+                                height="16"
+                                fill="none"
+                                stroke="currentColor"
+                                strokeWidth="2.2"
+                                strokeLinecap="round"
+                                strokeLinejoin="round"
+                                aria-hidden="true"
+                            >
+                                <rect x="3" y="11" width="18" height="11" rx="2" ry="2" />
+                                <path d="M7 11V7a5 5 0 0 1 10 0v4" />
+                            </svg>
+                            <span>View Project Brief</span>
+                        </button>
+                    )}
                 </div>
             </div>
 
@@ -133,6 +163,31 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({ project, index = 0 }) 
                                 <polyline points="7 7 17 7 17 17" />
                             </svg>
                         </a>
+                    )}
+
+                    {isConfidential && (
+                        <button
+                            type="button"
+                            onClick={() => onSelectConfidential?.(project)}
+                            className="fc-project-confidential-btn d-inline-flex align-items-center gap-2"
+                            aria-label={`Read confidential summary for ${project.title}`}
+                        >
+                            <svg
+                                viewBox="0 0 24 24"
+                                width="13"
+                                height="13"
+                                fill="none"
+                                stroke="currentColor"
+                                strokeWidth="2.2"
+                                strokeLinecap="round"
+                                strokeLinejoin="round"
+                                aria-hidden="true"
+                            >
+                                <rect x="3" y="11" width="18" height="11" rx="2" ry="2" />
+                                <path d="M7 11V7a5 5 0 0 1 10 0v4" />
+                            </svg>
+                            <span>{project.confidentialLabel}</span>
+                        </button>
                     )}
                 </div>
             </div>

@@ -19,6 +19,8 @@ export interface Project {
     imageHeight: number;
     liveUrl?: string;
     githubUrl?: string;
+    confidentialLabel?: string;
+    architectureHighlights?: string[];
     featured?: boolean;
     metrics?: string;
 }
