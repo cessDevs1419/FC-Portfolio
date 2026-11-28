@@ -193,13 +193,13 @@ export const PROJECT_CATEGORIES: ProjectCategory[] = [
 
 export const PROJECTS_DATA: Project[] = [
     {
-        id: "proj-yamakou",
-        title: "Yamakou Sapporo (山鋼札幌)",
+        id: "proj-jp-steel",
+        title: "Japanese Industrial Metal & Steel Works",
         category: "Custom WordPress",
         description:
-            "Custom-built from scratch via AI-assisted engineering, Figma MCP design matching, and custom .agent rules & skills for a Japanese steel & tooling firm with sub-2.5s load times.",
+            "Custom-built from scratch via AI-assisted engineering, Figma MCP design matching, and custom .agent rules & skills for a Japanese metal & steel works firm with sub-2.5s load times.",
         longDescription:
-            "Engineered a 100% custom WordPress theme completely from scratch using AI-assisted engineering workflows, direct Figma MCP layout parity, and custom .agent rules and skills files to enforce strict Japanese coding and QA standards.",
+            "Engineered a 100% custom WordPress theme completely from scratch using AI-assisted engineering workflows, direct Figma MCP layout parity, and custom .agent rules and skills files to enforce strict Japanese coding and QA standards for an industrial metal & steel works firm.",
         architectureHighlights: [
             "Custom-built from scratch with AI-assisted engineering guided by .agent rules & skills files",
             "Pixel-accurate layout, spacing, and Japanese typography matched directly via Figma MCP",
@@ -214,8 +214,8 @@ export const PROJECTS_DATA: Project[] = [
         metrics: "Sub-2.5s load time · Figma MCP + .agent",
     },
     {
-        id: "proj-yuan",
-        title: "Yuan Healthcare & Living (ゆあん)",
+        id: "proj-jp-healthcare",
+        title: "Japanese Senior Living & Nursing Care Portal",
         category: "Custom WordPress",
         description:
             "Accessible Japanese nursing & senior living portal custom-built from scratch with AI-assisted workflows, Figma MCP parity, and .agent quality/a11y rulesets.",
@@ -235,13 +235,13 @@ export const PROJECTS_DATA: Project[] = [
         metrics: "Strict Japanese QA · Figma MCP + .agent",
     },
     {
-        id: "proj-ishikari",
-        title: "Ishikari Glass Center (石狩ガラス)",
+        id: "proj-jp-glass",
+        title: "Japanese Architectural Glass Engineering",
         category: "Custom WordPress",
         description:
             "Precision architectural glass corporate site custom-built from scratch using AI-assisted engineering, Figma MCP specs, and modular .agent skills for 95+ Core Web Vitals.",
         longDescription:
-            "Built a lightweight custom PHP WordPress architecture from scratch for an architectural glass enterprise in Hokkaido. Leveraged Figma MCP tokens and custom .agent rules & skills files to streamline modular block generation and hit 95+ Core Web Vitals.",
+            "Built a lightweight custom PHP WordPress architecture from scratch for a Japanese architectural glass engineering enterprise. Leveraged Figma MCP tokens and custom .agent rules & skills files to streamline modular block generation and hit 95+ Core Web Vitals.",
         architectureHighlights: [
             "Custom WordPress blocks built from scratch with AI-assisted workflows and modular .agent skills",
             "Strict Figma MCP visual parity for grid proportions, CSS spacing, and responsive breakpoints",
@@ -256,8 +256,8 @@ export const PROJECTS_DATA: Project[] = [
         metrics: "Core Web Vitals 95+ · AI-Assisted Build",
     },
     {
-        id: "proj-hayashi",
-        title: "Hayashi Clinic (形成外科 はやしクリニック)",
+        id: "proj-jp-clinic",
+        title: "Japanese Medical & Plastic Surgery Clinic",
         category: "Custom WordPress",
         description:
             "Clinical WordPress portal custom-built from scratch with direct web reservation routing, medical SEO schema, Figma MCP design matching, and .agent QA rules.",
@@ -277,13 +277,13 @@ export const PROJECTS_DATA: Project[] = [
         metrics: "Web Booking Integration · Figma MCP",
     },
     {
-        id: "proj-reproject",
-        title: "Re Project (アールプロジェクト)",
+        id: "proj-jp-utilities",
+        title: "Japanese Utilities & Electrical Infrastructure",
         category: "Custom WordPress",
         description:
-            "Hokkaido utilities & infrastructure portal custom-built from scratch via AI-assisted engineering, Figma MCP precision, and .agent rules & skills for strict Japanese QA.",
+            "Japanese utilities & electrical infrastructure portal custom-built from scratch via AI-assisted engineering, Figma MCP precision, and .agent rules & skills for strict Japanese QA.",
         longDescription:
-            "Delivered a modern corporate and recruitment portal for a Hokkaido utilities and electrical services enterprise—engineered from scratch with pure custom PHP, Figma MCP design alignment, and custom .agent rules & skills for repeatable Japanese localization QA.",
+            "Delivered a modern corporate and recruitment portal for a Japanese utilities and electrical infrastructure enterprise—engineered from scratch with pure custom PHP, Figma MCP design alignment, and custom .agent rules & skills for repeatable Japanese localization QA.",
         architectureHighlights: [
             "Pure custom PHP theme built from scratch using AI-assisted engineering and .agent workflow skills",
             "Pixel-level Japanese layout & recruitment UI parity verified through Figma MCP",
